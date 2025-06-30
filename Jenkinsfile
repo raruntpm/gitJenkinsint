@@ -1,29 +1,17 @@
 pipeline {
-    agent any  // Run on any available agent
+    agent any
 
     stages {
-        stage('Stage 1: Checkout') {
+        stage('Stage 1') {
             steps {
-                echo 'Checking out the source code...'
+                echo 'Running Stage 1'
             }
         }
-
-        stage('Stage 2: Build') {
+        stage('Stage 2') {
             steps {
-                echo 'Building the project...'
-            }
-        }
-
-        stage('Stage 3: Test') {
-            steps {
-                echo 'Running tests...'
-            }
-        }
-
-        stage('Stage 4: Deploy') {
-            steps {
-                echo 'Deploying the application...'
+                echo 'Running Stage 2'
             }
         }
     }
 }
+
