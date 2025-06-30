@@ -10,6 +10,7 @@ pipeline {
         stage('Stage 2') {
             steps {
                 echo 'Running Stage 2'
+                python3 test.py
             }
         }
     }
